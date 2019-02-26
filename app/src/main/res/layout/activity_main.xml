@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <TextView
+        android:id="@+id/txt_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network Type Required"
+        android:textSize="14sp"/>
+
+    <RadioGroup
+        android:id="@+id/networkOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rad_nonetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            />
+        <RadioButton
+            android:id="@+id/rad_any_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Any"
+            />
+        <RadioButton
+            android:id="@+id/rad_wifi_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WIFI"
+            />
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/schedule_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule Job"/>
+
+</LinearLayout>
